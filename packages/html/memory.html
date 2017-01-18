@@ -1,0 +1,390 @@
+
+<!doctype html>
+<html>
+<head>
+ <title>Javascript Reaction Tester</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+ <style type="text/css">
+	
+#box{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+}
+#ans{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans2{
+width:100px;
+height:100px;
+background-color:green;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans3{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans4{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans5{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans6{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans7{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans8{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans9{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#ans10{
+width:100px;
+height:100px;
+background-color:red;
+display:none;
+position:relative;
+float:left;
+margin:10px;
+display:none;
+}
+#res{
+	float:bottom;
+	position:relative;
+	top:350px;
+	left:400px;
+}
+
+
+</style>
+</head>
+<body>
+<h1> Memory Game</h1>
+<h2 id="ins"> Carefully see the different colour appearing on the screen..... and try to remember their sequence... </h2>
+<h2 id="res">  </h2>
+<button id="start"> Start!!! </button>
+<div id="box">
+
+	
+	
+</div>
+<div id="ans">
+</div>
+<div id="ans2">
+</div>
+<div id="ans3">
+</div>
+<div id="ans4">
+</div>
+<div id="ans5">
+</div>
+<div id="ans6">
+</div>
+<div id="ans7">
+</div>
+<div id="ans8">
+</div>
+<div id="ans9">
+</div>
+<div id="ans10">
+</div>
+
+
+   <script type="text/javascript">	
+   
+	var total=0;var avg=0; var showw=0;
+	  document.getElementById("start").onclick=function(){
+	  document.getElementById("start").style.visibility = "hidden";
+   func();
+   }
+  var created; var completed;
+	var colours=["#FF0000","#00FF00","#00FFFF","#0101DF","#FFFF00","#FF00FF","#0B610B","#FF8000","#000000","#F6CEEC"];
+	var original=["#FF0000","#00FF00","#00FFFF","#0101DF","#FFFF00","#FF00FF","#0B610B","#FF8000","#000000","#F6CEEC"];
+  shuffle(colours);
+    
+	    var counter=0;
+	   
+   document.getElementById("ans").onclick=function(){
+	    if( colours[counter]=="#FF0000"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}
+		else
+			document.getElementById("res").innerHTML="Try Again!!!";
+  
+   }
+   document.getElementById("ans2").onclick=function(){
+	    if( colours[counter]=="#00FF00"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans2").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+   document.getElementById("ans3").onclick=function(){
+	    if( colours[counter]=="#00FFFF"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans3").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+   document.getElementById("ans4").onclick=function(){
+	    if( colours[counter]=="#0101DF"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans4").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+   document.getElementById("ans5").onclick=function(){
+	    if( colours[counter]=="#FFFF00"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans5").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+			
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+   document.getElementById("ans6").onclick=function(){
+	    if( colours[counter]=="#FF00FF"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans6").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+   document.getElementById("ans7").onclick=function(){
+	    if( colours[counter]=="#0B610B"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans7").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+    document.getElementById("ans8").onclick=function(){
+	    if( colours[counter]=="#FF8000"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans8").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+    document.getElementById("ans9").onclick=function(){
+	    if( colours[counter]=="#000000"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans9").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+    document.getElementById("ans10").onclick=function(){
+	    if( colours[counter]=="#F6CEEC"){
+			 document.getElementById("res").innerHTML="Correct!!!";
+			 document.getElementById("ans10").style.display="none";
+			counter++;
+			if(counter==10){
+				completed=Date.now();
+				alert("You Have taken "+(completed-created)/1000 + " sec to complete it");
+			}
+		}else
+			document.getElementById("res").innerHTML="Try Again!!!";
+
+  
+   }
+     
+   function func(){
+   var time=Math.random();
+   time=time*5000;
+  showw++;
+  if(showw <= 10){
+   setTimeout(function() {
+	 
+	   var top=Math.random();
+	   top=top*300;
+	   var left=Math.random();
+	   left=left*500;
+	   var coll=Math.random();
+	   coll=coll*5;
+	   coll=Math.floor(coll);
+	 
+	
+		document.getElementById("box").style.top=top+"px";
+		document.getElementById("box").style.left=left+"px";
+	    document.getElementById("box").style.backgroundColor=colours[showw-1];
+	    document.getElementById("box").style.display="block";
+		setTimeout(function() {
+		 document.getElementById("box").style.display="none";
+		 func();
+		},1000);
+		
+	    
+   },1000);
+   }
+   else{
+	   created=Date.now();
+  document.getElementById("ins").innerHTML="Now click on the colours in the sequence you them... If you are correct they will disappear";
+  document.getElementById("ans").style.display="block";
+  document.getElementById("ans").style.backgroundColor=original[0];
+ document.getElementById("ans2").style.display="block";
+ document.getElementById("ans2").style.backgroundColor=original[1];
+ document.getElementById("ans3").style.display="block";
+ document.getElementById("ans3").style.backgroundColor=original[2];
+ document.getElementById("ans4").style.display="block";
+ document.getElementById("ans4").style.backgroundColor=original[3];
+ document.getElementById("ans5").style.display="block";
+ document.getElementById("ans5").style.backgroundColor=original[4];
+ document.getElementById("ans6").style.display="block";
+ document.getElementById("ans6").style.backgroundColor=original[5];
+ document.getElementById("ans7").style.display="block";
+ document.getElementById("ans7").style.backgroundColor=original[6];
+ document.getElementById("ans8").style.display="block";
+ document.getElementById("ans8").style.backgroundColor=original[7];
+ document.getElementById("ans9").style.display="block";
+ document.getElementById("ans9").style.backgroundColor=original[8];
+ document.getElementById("ans10").style.display="block";
+ document.getElementById("ans10").style.backgroundColor=original[9];
+   }
+   }
+ function shuffle(a) {
+      var i = a.length - 1;
+      var j, temp;
+
+      while (i > 0) {
+            j = Math.floor(Math.random() * (i + 1));
+            temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+            i = i - 1;
+      }
+}
+   
+   
+   
+   </script>	 
+
+	
+</body>
+	
+</html>
