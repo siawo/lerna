@@ -5,6 +5,7 @@
   "main": "dist/fusioncharts-smartlabel.min.js",
   "module": "es/SmartlabelManager.js",
   "author": "FusionCharts Technologies  &lt;support@fusioncharts.com&gt;",
+  "private": true,
   "contributors": [
     "Akash Goswami",
     "Priyanjit Dey",
