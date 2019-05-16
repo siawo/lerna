@@ -1,3 +1,6 @@
 [submodule "vendors/calendar"]
 	path = vendors/calendar
 	url = git@github.com:fusioncharts/fc-calendar.git
+[submodule "vendors/smartlabel"]
+	path = vendors/smartlabel
+	url = git@github.com:fusioncharts/fusioncharts-smartlabel.git
