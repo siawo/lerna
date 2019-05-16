@@ -1,6 +1,6 @@
 {
   "name": "fc-calendar",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "main": "index.js",
   "repository": {
     "url": "git@github.com:fusioncharts/fc-calendar.git",
@@ -36,6 +36,6 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "html": "^1.0.1"
+    "html": "^1.0.2"
   }
 }
