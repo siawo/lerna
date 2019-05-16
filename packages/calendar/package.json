@@ -2,6 +2,7 @@
   "name": "fc-calendar",
   "version": "2.1.2",
   "main": "index.js",
+  "private": true,
   "repository": {
     "url": "git@github.com:fusioncharts/fc-calendar.git",
     "type": "git"
