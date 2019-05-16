@@ -1,0 +1,3 @@
+[submodule "vendors/redraphael"]
+	path = vendors/redraphael
+	url = git@github.com:fusioncharts/redraphael.git
