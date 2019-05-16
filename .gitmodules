@@ -7,3 +7,6 @@
 [submodule "vendors/html"]
 	path = vendors/html
 	url = git@github.com:siawo/learn.git
+[submodule "packages/html/vendors/redraphael"]
+	path = packages/html/vendors/redraphael
+	url = git@github.com:fusioncharts/redraphael.git
