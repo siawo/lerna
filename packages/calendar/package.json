@@ -1,6 +1,6 @@
 {
   "name": "fc-calendar",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "main": "index.js",
   "private": true,
   "repository": {
@@ -37,6 +37,6 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "html": "^1.0.5"
+    "html": "^1.0.6"
   }
 }
