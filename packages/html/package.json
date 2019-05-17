@@ -1,6 +1,6 @@
 {
   "name": "html",
-  "version": "1.0.4",
+  "version": "1.0.5-alpha.0",
   "description": "",
   "main": "index.js",
   "private": true,
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@abc/alpha": "^0.0.2"
+    "@abc/alpha": "^0.0.3"
   }
 }
